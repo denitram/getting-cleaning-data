@@ -61,3 +61,18 @@ descLabelNames <- gsub(",g", "G", descLabelNames)
 names(data3) <- descLabelNames
 data4 <- data3
 write.table(data4, file = "./data4.txt", row.names = FALSE)
+
+## Step 5: create a tidy data set with the average of each variable for each activity and each subject
+library(dplyr)
+tidy_df <- tbl_df(data4)
+
+tidy <- tidy_df %>%
+        group_by(subject, activityLabel ) %>%
+        arrange(subject, activityLabel) %>%
+        summarise_each(funs(mean))
+
+labels <- names(tidy)[3:88]
+tidyLabels <- gsub("^", "meanOfVar_", labels)
+names(tidy)[3:88] <- tidyLabels
+names(tidy)[2] <- "activity"
+write.table(tidy, file = "./tidy.txt", row.names = FALSE)

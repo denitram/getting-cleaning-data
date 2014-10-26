@@ -2,6 +2,12 @@
 
 This is the repository of the Coursera [Getting and Cleaning Data](https://www.coursera.org/course/getdata) course project.
 
+In this repository:
+
+* `README.md`, this file  
+* `CodeBook.md`, describes the data  
+* `run_analysis.R, the script used to tranfrom the raw data to a tidy data set  
+* `tidy.txt`, the tidy data set  
 
 The script **run_analysis.R** does the following:
 
@@ -22,11 +28,11 @@ The script runs in the folder 'UCI HAR Dataset' and expects the following files 
 ./train/subject_train.txt	
 ./train/y_train.txt  
 
-### Step 1 - Merge the training and the test sets to create one data set.
+### Step 1 
 Merge the **train** and the **test** raw data together using `rbind()` and `cbind()` functions.  
 Step 1 delivers the data frame **data1** which contains 10299 observations and 563 variables.  
 
-### Step 2 -
+### Step 2  
 Requirement: `dplyr` package  
 Add the column's headers to the data set obtained in step 1 using the `colnames()` function.  
 Select only the columns which contain the strings 'mean', 'Mean or 'std' in the header label using the `select` verb from the `dplyr` package.  
@@ -40,3 +46,8 @@ Step 3 delivers the data frame **data3** which contains 10299 observations and 8
 
 ### Step 4  
 Label the data set with descriptive variable names using the `gsub` function.  
+
+### Step 4
+Requirement: `dplyr` package  
+Group, order and calculate averages using the `chain` function of `dplyr` package.  
+Step 4 delivers a 'tidy' data set `tidy.txt` which contains 180 observatios and 8 variables.  
