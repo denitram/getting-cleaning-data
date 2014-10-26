@@ -6,7 +6,7 @@ In this repository:
 
 * `README.md`, this file  
 * `CodeBook.md`, describes the data  
-* `run_analysis.R, the script used to tranfrom the raw data to a tidy data set  
+* `run_analysis.R`, the script used to tranform the raw data to a tidy data set  
 * `tidy.txt`, the tidy data set  
 
 The script **run_analysis.R** does the following:
@@ -50,4 +50,4 @@ Label the data set with descriptive variable names using the `gsub` function.
 ### Step 4
 Requirement: `dplyr` package  
 Group, order and calculate averages using the `chain` function of `dplyr` package.  
-Step 4 delivers a 'tidy' data set `tidy.txt` which contains 180 observatios and 8 variables.  
+Step 4 delivers a 'tidy' data set `tidy.txt` which contains 180 observations and 8 variables.  
