@@ -13,18 +13,18 @@ The script **run_analysis.R** does the following:
 
 The script runs in the folder 'UCI HAR Dataset' and expects the following files and folders:
 ./activity_labels.txt	
-./features_info.txt
-./features.txt
-./test/X_test.txt		
-./test/subject_test.txt	
-./test/y_test.txt
-./train/X_train.txt		
+./features_info.txt  
+./features.txt  
+./test/X_test.txt		  
+./test/subject_test.txt	  
+./test/y_test.txt  
+./train/X_train.txt		  
 ./train/subject_train.txt	
-./train/y_train.txt
+./train/y_train.txt  
 
 ## Step 1 - Merge the training and the test sets to create one data set.
-Merge the train and the test raw data together using rbind() and cbind() functions
-Step 1 delivers the data fram **data1** which contains 10299 observations and 563 variables
+Merge the `train` and the `test` raw data together using rbind() and cbind() functions
+Step 1 delivers the data frame **data1** which contains 10299 observations and 563 variables
 
 ## Step 2 -
 Requirements:
