@@ -27,13 +27,16 @@ Merge the **train** and the **test** raw data together using `rbind()` and `cbin
 Step 1 delivers the data frame **data1** which contains 10299 observations and 563 variables.  
 
 ### Step 2 -
-Requirement: `dplyr` package 
-Add the column's headers to the data set obtained in step 1 using the `colnames()` function.
-Select only the columns which contain the strings 'mean', 'Mean or 'std' in the header label using the `select` verb from the `dplyr` package.
-Step 2 delivers the data frame **data2** which contains 10299 observations and 88 variables.
+Requirement: `dplyr` package  
+Add the column's headers to the data set obtained in step 1 using the `colnames()` function.  
+Select only the columns which contain the strings 'mean', 'Mean or 'std' in the header label using the `select` verb from the `dplyr` package.  
+Step 2 delivers the data frame **data2** which contains 10299 observations and 88 variables.  
 
-### Step 3
-
+### Step 3  
+Load the file `activity_labels.txt` in `R` and label the two columns `id` and `activity`.  
+Merge the `activity_labels` with the data set `data2` obtained in setp 2.  
+Remove the `activity_id` column.  
+Step 3 delivers the data frame **data3** which contains 10299 observations and 88 variables, where the descriptive activity names are been added.
 
 
 * 
