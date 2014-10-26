@@ -13,8 +13,8 @@ The column's labels `3:88` are build from the labels in `feature.txt` with the f
 *  `(` and ')' removed  
 
 ### Variables
-    1 subject  (Id's of the subject who                                                                              
-    2 activity (String label from the file `activity_labels.txt` provided in the raw data set)
+    1 subject  (Subjet id - integer)
+    2 activity (Label from the file `activity_labels.txt` provided in the raw data set - string)
     3 meanOfVar_timeBodyAccelerationMeanX                                                  
     4 meanOfVar_timeBodyAccelerationMeanY                                                  
     5 meanOfVar_timeBodyAccelerationMeanZ                                                  
