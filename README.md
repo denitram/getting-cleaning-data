@@ -38,5 +38,5 @@ Merge the `activity_labels` with the data set `data2` obtained in setp 2.
 Remove the `activity_id` column.  
 Step 3 delivers the data frame **data3** which contains 10299 observations and 88 variables, where the descriptive activity names are been added.
 
-
-* 
+### Step 4  
+Label the data set with descriptive variable names using the `gsub` function.  
